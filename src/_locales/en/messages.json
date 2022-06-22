@@ -1,0 +1,10 @@
+{
+	"EXT_NAME" : {
+		"message" : "web-ext-msg-passing example",
+		"description" : "manifest name"
+	},
+	"EXT_DESC" : {
+		"message" : "web-ext-msg-passing usage example",
+		"description" : "manifest description"
+	}
+}
