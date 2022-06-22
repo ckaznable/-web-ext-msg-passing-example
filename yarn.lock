@@ -3001,8 +3001,10 @@ verror@1.10.0:
     core-util-is "1.0.2"
     extsprintf "^1.2.0"
 
-"web-ext-msg-passing@file:/home/kamix/js/web-ext-msg-passing":
-  version "0.0.1"
+web-ext-msg-passing@^0.0.2:
+  version "0.0.2"
+  resolved "https://registry.yarnpkg.com/web-ext-msg-passing/-/web-ext-msg-passing-0.0.2.tgz#7fcb258b99dd947ec7f98c87656b96cbe7d1707d"
+  integrity sha512-s39uGEKeRxsa2uPtWaal3BzCkWLVcFCe878fqWS0OL3fpyMW89HDh/XLTTVN92vYX4mYY0wcByLnrjTFp78xzg==
   dependencies:
     "@types/chrome" "^0.0.188"
 
