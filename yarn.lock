@@ -3001,10 +3001,10 @@ verror@1.10.0:
     core-util-is "1.0.2"
     extsprintf "^1.2.0"
 
-web-ext-msg-passing@^0.0.2:
-  version "0.0.2"
-  resolved "https://registry.yarnpkg.com/web-ext-msg-passing/-/web-ext-msg-passing-0.0.2.tgz#7fcb258b99dd947ec7f98c87656b96cbe7d1707d"
-  integrity sha512-s39uGEKeRxsa2uPtWaal3BzCkWLVcFCe878fqWS0OL3fpyMW89HDh/XLTTVN92vYX4mYY0wcByLnrjTFp78xzg==
+web-ext-msg-passing@^0.0.4:
+  version "0.0.4"
+  resolved "https://registry.yarnpkg.com/web-ext-msg-passing/-/web-ext-msg-passing-0.0.4.tgz#326197c88eaaefc77db8c638f8d3ae7b51b30adc"
+  integrity sha512-3tQ1+mgl6p0Hi8PfGD8S63vMREkhrKLAMbJeZUvo0qI/3nmrg0q1MF7BmN/uq4fGqDrUPSQJlfC6GvoSS2yS8Q==
   dependencies:
     "@types/chrome" "^0.0.188"
 
