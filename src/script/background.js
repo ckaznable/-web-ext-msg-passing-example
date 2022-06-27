@@ -1,4 +1,4 @@
-import { listen, listenGroup, installListener } from "web-ext-msg-passing"
+import { listen, listenGroup, installListener, listenNamespaceGroup, listenNamespace } from "web-ext-msg-passing"
 
 installListener()
 
@@ -18,5 +18,20 @@ listenGroup({
     chrome.storage.local.get(["tabid"], res => {
       res.tabid && chrome.tabs.remove(res.tabid)
     })
+  }
+})
+
+listenNamespace("api", "getGithubHtml", async (_, reply) => {
+  reply(await fetch("https://github.com/").then(res => res.text()))
+})
+
+listenNamespaceGroup("browser", {
+  getCurrentTabId(_, reply) {
+    chrome.tabs.query({active: true, currentWindow: true}, tabs => {
+      reply(tabs[0]?.id || "")
+    })
+  },
+  getCurrentWindowId(_, reply) {
+    reply(chrome.windows.WINDOW_ID_CURRENT)
   }
 })
