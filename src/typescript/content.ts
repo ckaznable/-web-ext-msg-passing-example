@@ -1,4 +1,4 @@
-import { sendWithResponse } from "./messenger"
+import { send } from "./messenger"
 
 // response will be Promise<{result: string}>
-sendWithResponse("callApi", {id: 123})
+send("callApi", {id: 123})
