@@ -5,9 +5,9 @@ installListener()
 
 listenCustomGroup({
   // data type is {id: number}
-  callApi(data, reply) {
+  callApi(data) {
     // do something...
-    reply({result: ""})
+    return {result: ""}
   },
   openTab() {
     chrome.tabs.create({}, tabs => {

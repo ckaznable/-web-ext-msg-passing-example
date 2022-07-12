@@ -2,8 +2,8 @@ import { listen, listenGroup, installListener, listenNamespaceGroup, listenNames
 
 installListener()
 
-listen("get google html", async (_, reply) => {
-  reply(await fetch("https://www.google.com/").then(res => res.text()))
+listen("get google html", () => {
+  return fetch("https://www.google.com/").then(res => res.text())
 })
 
 listenGroup({
@@ -21,17 +21,19 @@ listenGroup({
   }
 })
 
-listenNamespace("api", "getGithubHtml", async (_, reply) => {
-  reply(await fetch("https://github.com/").then(res => res.text()))
+listenNamespace("api", "getGithubHtml", async () => {
+  return fetch("https://github.com/").then(res => res.text())
 })
 
 listenNamespaceGroup("browser", {
-  getCurrentTabId(_, reply) {
-    chrome.tabs.query({active: true, currentWindow: true}, tabs => {
-      reply(tabs[0]?.id || "")
+  getCurrentTabId() {
+    return new Promise((resolve) => {
+      chrome.tabs.query({active: true, currentWindow: true}, tabs => {
+        resolve(tabs[0]?.id || "")
+      })
     })
   },
-  getCurrentWindowId(_, reply) {
-    reply(chrome.windows.WINDOW_ID_CURRENT)
+  getCurrentWindowId() {
+    return chrome.windows.WINDOW_ID_CURRENT
   }
 })

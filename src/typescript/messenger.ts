@@ -11,4 +11,3 @@ const customSender = new Sender<CustomMessengerHandle>
 export const listenCustom = listen<CustomMessengerHandle>
 export const listenCustomGroup = listenGroup<CustomMessengerHandle>
 export const send = customSender.send
-export const sendWithResponse = customSender.sendWithResponse

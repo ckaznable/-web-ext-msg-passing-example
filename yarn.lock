@@ -1135,14 +1135,6 @@
     "@types/filesystem" "*"
     "@types/har-format" "*"
 
-"@types/chrome@^0.0.188":
-  version "0.0.188"
-  resolved "https://registry.yarnpkg.com/@types/chrome/-/chrome-0.0.188.tgz#ed73feca28a6d84f796ec50a2dbe7e41510175b3"
-  integrity sha512-fVxbcnSrQqCaaTFfaP9QooRr0Lf47Ni+QVGpd4SQafe6x8RlLrlp+AAgc4QKNUVK7W6xEoOePMAu5sBXrc2qhA==
-  dependencies:
-    "@types/filesystem" "*"
-    "@types/har-format" "*"
-
 "@types/estree@*":
   version "0.0.51"
   resolved "https://registry.yarnpkg.com/@types/estree/-/estree-0.0.51.tgz#cfd70924a25a3fd32b218e5e420e6897e1ac4f40"
@@ -3001,12 +2993,10 @@ verror@1.10.0:
     core-util-is "1.0.2"
     extsprintf "^1.2.0"
 
-web-ext-msg-passing@^0.0.6:
-  version "0.0.6"
-  resolved "https://registry.yarnpkg.com/web-ext-msg-passing/-/web-ext-msg-passing-0.0.6.tgz#913c171832cf93a525fdafa5573bb960e571021b"
-  integrity sha512-E653/E0EpT+BfCoB3iZ7agJrqtEdqA6Tuf9ZsFTAxE0pTLTGcGNXtmU3RRJTc1eHLEmmX0VZVrTKSxf4+hxCOg==
-  dependencies:
-    "@types/chrome" "^0.0.188"
+web-ext-msg-passing@^0.1.0:
+  version "0.1.0"
+  resolved "https://registry.yarnpkg.com/web-ext-msg-passing/-/web-ext-msg-passing-0.1.0.tgz#79e9fba1e94fb81b7209a6e0fd8612299bda7c79"
+  integrity sha512-XNT6bpI87eUP1fvnbiYaLP4xEnBstIDPmr91uLC158LBhZUeeqtpTJuZKUhiZHM5oeYLTnSn6vsyLJmMQ9i+Mg==
 
 which@^2.0.1, which@^2.0.2:
   version "2.0.2"

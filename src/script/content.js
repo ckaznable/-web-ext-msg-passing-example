@@ -6,9 +6,9 @@ const unionSender = new UnionSender(["browser", "api"])
 ;(async () => {
   // listen content event
   installListener()
-  listen("getContentHtml", (_, reply) => {
+  listen("getContentHtml", () => {
     console.log("get request get content html")
-    reply(document.documentElement.innerHTML)
+    return document.documentElement.innerHTML
   })
 
   // get data from bg
