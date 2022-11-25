@@ -43,6 +43,6 @@
     "rollup-plugin-terser": "^7.0.2"
   },
   "dependencies": {
-    "web-ext-msg-passing": "^0.1.0"
+    "web-ext-msg-passing": "^0.1.5"
   }
 }

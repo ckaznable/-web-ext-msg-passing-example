@@ -2993,10 +2993,10 @@ verror@1.10.0:
     core-util-is "1.0.2"
     extsprintf "^1.2.0"
 
-web-ext-msg-passing@^0.1.0:
-  version "0.1.0"
-  resolved "https://registry.yarnpkg.com/web-ext-msg-passing/-/web-ext-msg-passing-0.1.0.tgz#79e9fba1e94fb81b7209a6e0fd8612299bda7c79"
-  integrity sha512-XNT6bpI87eUP1fvnbiYaLP4xEnBstIDPmr91uLC158LBhZUeeqtpTJuZKUhiZHM5oeYLTnSn6vsyLJmMQ9i+Mg==
+web-ext-msg-passing@^0.1.5:
+  version "0.1.5"
+  resolved "https://registry.yarnpkg.com/web-ext-msg-passing/-/web-ext-msg-passing-0.1.5.tgz#1b4562eb214548535d4c8b60995b821b184f4112"
+  integrity sha512-bw9tyfNKiDmNBJ8Oq3t1RsGt533paCIOBAZjUbLPhvwhF9ijPmbtnQ+6xZs5SJICPIfLVTyhiDuc0Q9hD2wBdQ==
 
 which@^2.0.1, which@^2.0.2:
   version "2.0.2"
